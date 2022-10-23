@@ -396,15 +396,14 @@ button:focus{
 
 .eyes{
   position: absolute;
-  top:80%;
+  top:600%;
   transform: rotate(90deg);
-
   width:100%;
   text-align:center;
 }
 .eye{
-  width:240px;
-  height: 120px;
+  width:50px;
+  height: 50px;
   background: #ffff;
   display: inline-block;
   margin:40px;
@@ -413,16 +412,48 @@ button:focus{
   overflow:hidden;
   transform: rotate(90deg);
 }
-.ball{
-  width:40px;
-  height:40px;
+.ball1{
+  width:12px;
+  height:12px;
   background: #000;
-  position: absolute;
-  top:50%;
-  left:50%;
+  position: relative;
+  top:25%;
+  left:25%;
   transform: rotate(90deg);
   border-radius: 50%;
-  border: 15px solid #333;
+  border: 11px solid #333;
+}
+.ball2{
+  width:12px;
+  height:12px;
+  background: #000;
+  position: relative;
+  top:25%;
+  left:25%;
+  transform: rotate(90deg);
+  border-radius: 50%;
+  border: 11px solid #333;
 }
 
- 
+
+.ab_eye1{
+  margin-top: 730px ;
+  cursor: move; 
+  width: 50px;
+  height: 50px; 
+  transform-origin: center; 
+  transition: initial;
+  left: 12px;
+  top: 12px
+}
+.ab_eye2{
+  margin-top: 730px ;
+  /* margin-left:50px; */
+  cursor: move; 
+  width: 50px;
+  height: 50px; 
+  transform-origin: center; 
+  transition: initial;
+  left: 12px;
+  top: 12px
+}
