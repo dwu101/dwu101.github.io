@@ -1,5 +1,6 @@
 
 body {
+    
     margin: 0;
     height: 100vh;
     font-weight: 100;
@@ -12,6 +13,14 @@ body {
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;
     animation: fadeIn 1 1s ease-out;
+}
+
+html{
+  height: 100%;
+  margin: auto;
+  width: 960px;
+  overflow: scroll;
+
 }
 
 button{
@@ -394,50 +403,8 @@ button:focus{
   .sidenav a {font-size: 18px;}
 }
 
-.eyes{
-  position: absolute;
-  top:600%;
-  transform: rotate(90deg);
-  width:100%;
-  text-align:center;
-}
-.eye{
-  width:50px;
-  height: 50px;
-  background: #ffff;
-  display: inline-block;
-  margin:40px;
-  border-radius: 50%;
-  position: relative;
-  overflow:hidden;
-  transform: rotate(90deg);
-}
-.ball1{
-  width:12px;
-  height:12px;
-  background: #000;
-  position: relative;
-  top:25%;
-  left:25%;
-  transform: rotate(90deg);
-  border-radius: 50%;
-  border: 11px solid #333;
-}
-.ball2{
-  width:12px;
-  height:12px;
-  background: #000;
-  position: relative;
-  top:25%;
-  left:25%;
-  transform: rotate(90deg);
-  border-radius: 50%;
-  border: 11px solid #333;
-}
-
-
 .ab_eye1{
-  margin-top: 730px ;
+  margin-top: 700px ;
   cursor: move; 
   width: 50px;
   height: 50px; 
@@ -447,7 +414,7 @@ button:focus{
   top: 12px
 }
 .ab_eye2{
-  margin-top: 730px ;
+  margin-top: 700px ;
   /* margin-left:50px; */
   cursor: move; 
   width: 50px;
@@ -456,4 +423,8 @@ button:focus{
   transition: initial;
   left: 12px;
   top: 12px
+}
+.scroll{
+  height:400px;
+  width:2000px;
 }
