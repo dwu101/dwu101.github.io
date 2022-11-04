@@ -428,3 +428,15 @@ button:focus{
   height:400px;
   width:2000px;
 }
+
+.bone_picture{
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background-repeat: no-repeat, repeat;
+  background-image: url("./pictures/Bone.jpg");
+  background-blend-mode: lighten;
+  /* object-fit: cover;
+  object-position: 40% 70%; */
+  margin: -200px 500px -80px;
+}

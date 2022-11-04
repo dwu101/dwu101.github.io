@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href = "styles.css">
+    <script src="scripts.js"> </script>
+</head>
+
+<body>
+  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <div class='light x1'></div>
+    <div class='light x2'></div>
+    <div class='light x3'></div>
+    <div class='light x4'></div>
+    <div class='light x5'></div>
+    <div class='light x6'></div>
+    <div class='light x7'></div>
+    <div class='light x8'></div>
+    <div class='light x9'></div>
+    
+
+    <div class="sidenav">
+      
+        <a href="https://www.linkedin.com/in/daniel-wu-5a31ab213/">Linkedin</a>
+        <a href="https://github.com/dwu101">Github</a>
+        <a href="projects.html">Projects</a>
+        <a href="#">Fun Facts</a>
+    
+      
+      <img class = "ab_eye1" width="60" height="60" width_o="60" height_o="60" left = "10px" top = "30px"
+      data-src="https://freight.cargo.site/t/original/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg" 
+      data-mid="78187899" 
+      data-scale="15" data-no-zoom="" 
+      data-draggable="" alt="#eye" data-caption="#eye" 
+      data-draggable-id="draggable_74" 
+      src="https://freight.cargo.site/w/30/q/94/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg">
+
+      <img class = "ab_eye2" width="60" height="60" width_o="60" height_o="60" left = "10px" top = "30px"
+      data-src="https://freight.cargo.site/t/original/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg" 
+      data-mid="78187899" 
+      data-scale="15" data-no-zoom="" 
+      data-draggable="" alt="#eye" data-caption="#eye" 
+      data-draggable-id="draggable_74" 
+      src="https://freight.cargo.site/w/30/q/94/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg">
+      
+
+  <script>
+    var eye1 = document.querySelector(".ab_eye1");
+    var eye2 = document.querySelector(".ab_eye2");
+
+
+    document.onmousemove = function(){
+        var tempx1 = event.clientX  ;
+        var tempy1 = window.innerHeight-event.clientY;
+        var theta = (90-(Math.atan(tempy1/tempx1)*180/Math.PI)).toString();
+      
+        eye1.style.transform = "rotate(" + theta + "deg)";
+        eye2.style.transform = "rotate(" + theta + "deg)";
+
+    }
+  </script>
+ 
+</div>
+<div class = "bone_picture" ></div>
+
+<div style = "position: absolute; left: 17%; top: 10%;font-size: 30px;color:whitesmoke">Obviously I can't show you real data from the lab, so here's
+a very-anatomically-accurate drawing of a bone cross-section. </div>
+
+
