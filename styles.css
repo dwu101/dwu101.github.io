@@ -430,13 +430,58 @@ button:focus{
 }
 
 .bone_picture{
-  position: relative;
-  width: 800px;
-  height: 800px;
+  position: absolute;
+  top: 42%;
+  left: 40%;
+  width: 400px;
+  height: 600px;
   background-repeat: no-repeat, repeat;
-  background-image: url("./pictures/Bone.jpg");
   background-blend-mode: lighten;
   /* object-fit: cover;
   object-position: 40% 70%; */
-  margin: -200px 500px -80px;
+  margin: -200px 70px -80px;
+}
+
+
+.bone_picture_broken{
+  position: absolute;
+  top: 100%;
+  left: 44%;
+  width: 400px;
+  height: 600px;
+  
+  /* object-fit: cover;
+  object-position: 40% 70%; */
+  /* margin: -200px 70px -80px; */
+}
+
+.bone_picture_broken_2{
+  position: absolute;
+  top: 190%;
+  left: 44%;
+  width: 400px;
+  height: 600px;
+}
+.bone_picture_broken_3{
+  position: absolute;
+  top: 280%;
+  left: 44%;
+  width: 400px;
+  height: 600px;
+}
+.bone_picture_broken_4{
+  position: absolute;
+  top: 385%;
+  left: 44%;
+  width: 400px;
+  height: 600px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
 }

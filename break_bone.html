@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+
+<meta charset ="utf-8">
+<html lang = "en">
 
 <head>
     <link rel="stylesheet" href = "styles.css">
@@ -62,9 +64,36 @@
   </script>
  
 </div>
-<div class = "bone_picture" ></div>
+<div >
+<div id = "unbroken_bone" style = "display:none;" >
 
-<div style = "position: absolute; left: 17%; top: 10%;font-size: 30px;color:whitesmoke">Obviously I can't show you real data from the lab, so here's
+</div>
+<img class = "bone_picture" src = "./pictures/Bone.jpg">
+
+
+<img class = "bone_picture_broken" src = "./pictures/broken_bone_3.jpg">
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 10%;font-size: 30px;color:whitesmoke;">Obviously I can't show you real data from the lab, so here's
 a very-anatomically-accurate drawing of a bone cross-section. </div>
 
+<div style = "position: absolute; left: 14%; width: 80%; top: 90%;font-size: 30px;color:whitesmoke;">Now let's break it.</div>
+<div style = "position: absolute; left: 14%; width: 80%; top: 175%;font-size: 30px;color:whitesmoke;">Under some research settings, this broken bone would ideally heal in a way so that it returns to its original shape. But sometimes this doesn't happen, and it looks like </div>
 
+
+<img class = "bone_picture_broken_2" src = "./pictures/broken_bone.jpg">
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 265%;font-size: 30px;color:whitesmoke;">Great, now the sample has deviated too much from ideal. Time to throw the sample away. Would you throw away the sample below? </div>
+
+<img class = "bone_picture_broken_3" src = "./pictures/broken_bone_2.jpg">
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 355%;font-size: 30px;color:whitesmoke;"> Some might say to throw it away, some might not. This is certainly a problem. Objectivity should be a big no-no in research. So, I decided to find an exact "measure of breakage". </div>
+<div style = "position: absolute; left: 14%; width: 80%; top: 370%;font-size: 30px;color:whitesmoke;">With my own edge detection code that I taylored specifically for the real sample images, my code could find the bone edge and find the angle of breakage. </div>
+
+<img class = "bone_picture_broken_4" src = "./pictures/Example.jpg">
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 455%;font-size: 30px;color:whitesmoke;">This is my algorithm running on the previous totally-accurate bone representation. The green marks where my edge detection found the bone, and an angle of 2.88 degrees of breakage was found. Once a threshold for an acceptable degree of breakage is established, this process will be entirely objective. This elimates the possiblity of a invalid sample making it into the final data analysis or a valid sample being thrown away, which will drastially improve the quality of the data produced.</div>
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 475%;font-size: 30px;color:whitesmoke;">I am currently leading a small team to develop this into a usable app. We are currently using Flask and ReactJS.</div>
+
+<div style = "position: absolute; left: 14%; width: 80%; top: 475%;font-size: 30px;color:whitesmoke;"></div>
+<div class = "footer">Poop</div></div>

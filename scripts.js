@@ -4,3 +4,7 @@ function showWelcome(){
 setTimeout("showWelcome()", 9000)
 
 
+function showUnbrokenBone(){
+    document.getElementById("bone_picture").style.display = "inline";
+}
+setTimeout("showUnBrokenBone()", 1000)
