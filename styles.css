@@ -8,7 +8,8 @@ body {
     -webkit-overflow-Y: hidden;
     -moz-overflow-Y: hidden;
     -o-overflow-Y: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+   
     -webkit-animation: fadeIn 1 1s ease-out;
     -moz-animation: fadeIn 1 1s ease-out;
     -o-animation: fadeIn 1 1s ease-out;
@@ -239,11 +240,11 @@ button:focus{
   animation-delay: 4s;
 }
 
-/* #head3{
-  -webkit-animation: finalFase 1 3s ease-in;
-  -moz-animation: finalFade 1 3s ease-in;
-  -o-animation: finalFade 1 3s ease-in;
-  animation: finaFade 1 3s ease-in;
+#head3{
+  -webkit-animation: fadeIn 1s ease-in-out 1000s forwards;
+  -moz-animation: fadeIn 1s ease-in-out 1000s forwards;
+  -o-animation: fadeIn 1s ease-in-out 1000s forwards;
+  animation: fadeIn 1s ease-in-out 1000s forwards;
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
   -o-animation-delay: 8s;
@@ -258,23 +259,8 @@ button:focus{
   -webkit-animation-delay: 17s;
   -moz-animation-delay: 17s;
   -o-animation-delay: 17s;
-  animation-delay: 17s; */
+  animation-delay: 17s; 
 
-
-#head3{
-    animation-delay: 9s;
-  /* -webkit-animation: finalFade 1 5s ease-in;
-  -moz-animation: finalFade 1 5s ease-in;
-  -o-animation: finalFade 1 5s ease-in;
-  animation: finalFade 1 5s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 22s;
-  -moz-animation-delay: 22s;
-  -o-animation-delay: 22s;
-  animation-delay: 22s; */
 } 
 
 @-webkit-keyframes fadeIn{
@@ -367,7 +353,7 @@ button:focus{
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 10%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -431,22 +417,23 @@ button:focus{
 
 .bone_picture{
   position: absolute;
-  top: 42%;
+  
   left: 40%;
   width: 400px;
   height: 600px;
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: lighten;
+  top: 15%;
+
+ 
   /* object-fit: cover;
   object-position: 40% 70%; */
-  margin: -200px 70px -80px;
+  
 }
 
 
 .bone_picture_broken{
   position: absolute;
-  top: 100%;
-  left: 44%;
+  top: 10%;
+  left: 40%;
   width: 400px;
   height: 600px;
   
@@ -457,22 +444,40 @@ button:focus{
 
 .bone_picture_broken_2{
   position: absolute;
-  top: 190%;
-  left: 44%;
+  top: 20%;
+  left: 40%;
   width: 400px;
   height: 600px;
 }
 .bone_picture_broken_3{
   position: absolute;
-  top: 280%;
-  left: 44%;
+  top: 20%;
+  left: 40%;
   width: 400px;
   height: 600px;
 }
 .bone_picture_broken_4{
   position: absolute;
-  top: 385%;
-  left: 44%;
+  top: 45%;
+  left: 40%;
   width: 400px;
   height: 600px;
+}
+
+.navbar {
+  position: absolute ;
+  bottom: 100px;
+  width: 100%;
+  height: 10px;
+  
+}
+.some-button{
+  -webkit-animation: fadeIn 1s ease-in-out 1000s forwards;
+  -moz-animation: fadeIn 1s ease-in-out 1000s forwards;
+  -o-animation: fadeIn 1s ease-in-out 1000s forwards;
+  animation: fadeIn 1s ease-in-out 1000s forwards;
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
 }
