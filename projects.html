@@ -7,70 +7,78 @@
 </head>
 
 <body>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
-    <div class='light x1'></div>
-    <div class='light x2'></div>
-    <div class='light x3'></div>
-    <div class='light x4'></div>
-    <div class='light x5'></div>
-    <div class='light x6'></div>
-    <div class='light x7'></div>
-    <div class='light x8'></div>
-    <div class='light x9'></div>
+    <h1 style = "font-size: 3vw; text-align:center; font-family: palatino, serif;"> Personal Projects!</h1>
+    <h1 style = "width: 80%; margin: 0 auto; font-weight: 90;display:flex;font-weight:bold; font-size: 2vw">Bone Analysis: </h1>
 
-    <div class="sidenav">
-        <a href="https://www.linkedin.com/in/daniel-wu-5a31ab213/">Linkedin</a>
-        <a href="https://github.com/dwu101">Github</a>
-        <a href="projects.html">Projects</a>
-        <a href="#">Fun Facts</a>
-    
+    <h1 style = "width: 80%; margin: 0 auto; font-weight: 90;display:flex;"><br>
+      I gained the idea for this project during my internship at the Bioengineering lab. I noticed
+      that after they had scanned and taken pictures of surgically broken bones, they would
+      have someone look at the pictures and decide whether or not the sample was good
+      enough to keep or throw it away. The main thing that was looked for was bone alignment.
+      Since I don't want to show real samples from the lab, I create a very realistic remake.
+      Picture (1) shows an aligned broken bone, while picture (2) shows a very unaligned broken
+      bone. <br><br>
+      This project determines the angle at which a bone is broken to provide the groundwork
+      for determining an exact angle of breakage that would cause a sample to be thrown away.
+      Taking inspiration from popular algorithms for image analysis, I developed my own edge detection algorithm to find the edge of the bone. The green in picture (3) shows the edge
+      my algorithm found as well as the angle of breakage that it calculated, which is 11.11
+      degrees.</h1>
+      <figure>
+      <img src = "./pictures/image (3).png" style = "position: absolute; height: 50%; left: 10.5%;top: 68%;"/>
+        
+      <figcaption style = "position: absolute;left: 10.5%;top: 119%;font-size: 1.8vw;">Picture (1): <br> Aligned Broken Bone</figcaption>
+      </figure>
       
-      <img class = "ab_eye1" width="60" height="60" width_o="60" height_o="60" left = "10px" top = "30px"
-      data-src="https://freight.cargo.site/t/original/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg" 
-      data-mid="78187899" 
-      data-scale="15" data-no-zoom="" 
-      data-draggable="" alt="#eye" data-caption="#eye" 
-      data-draggable-id="draggable_74" 
-      src="https://freight.cargo.site/w/30/q/94/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg">
+      <figure>
+        <img src = "./pictures/image (4).png" style = "position: absolute; height: 50%; left: 39%;top: 68%;"/>
+          
+        <figcaption style = "position: absolute;left: 39%;top: 119%;font-size: 1.8vw;">Picture (2): <br> Unaligned Broken Bone</figcaption>
+        </figure>
 
-      <img class = "ab_eye2" width="60" height="60" width_o="60" height_o="60" left = "10px" top = "30px"
-      data-src="https://freight.cargo.site/t/original/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg" 
-      data-mid="78187899" 
-      data-scale="15" data-no-zoom="" 
-      data-draggable="" alt="#eye" data-caption="#eye" 
-      data-draggable-id="draggable_74" 
-      src="https://freight.cargo.site/w/30/q/94/i/61b71b71e66089bf2f6c40d186dfb73a15c265596f7be46521c7f212b3a1e4cd/eyeballs.svg">
       
+      <figure>
+          <img src = "./pictures/image (5).png" style = "position: absolute; height: 50%; left: 70%;top: 68%;"/>
+            
+          <figcaption style = "position: absolute;left: 70%;top: 119%;font-size: 1.8vw;">Picture (3): <br> Analyzed Unaligned Broken Bone</figcaption>
+      </figure>
 
-  <script>
-    var eye1 = document.querySelector(".ab_eye1");
-    var eye2 = document.querySelector(".ab_eye2");
+
+      <h1 style = "position: absolute; width: 80%; margin: 0 auto; display: flex; font-weight: 90; top: 140%;text-align: left;left: 10.5%; font-size: 2vw; font-weight: bold;">Shape Identification: </h1>
+      <h1 style = "position: absolute; width: 80%; margin: 0 auto; display: flex; font-weight: 90; top: 140%;text-align: left;left: 10.5%;"><br><br>
+        
+        I have no idea where the inspiration for this came from -- it was just something I thought
+        would be cool to code up and uses a lot of concepts that I am interested in. The goal is to
+        use a Tensorflow neural network to be able to determine the shape and size of an 3D
+        object purely based on how the area of the object's shadow changes as it rotates.<br><br>
+        I generated my own data set for this. To do so, I implemented Python code that displays
+        the 2D projection of a 3D object onto the computer screen and utilizes rotation matrices
+        (a concept of Linear Algebra) that rotates this projection. These displays are essentially
+        shadows of the object, assuming that a light is shined perfectly flush with the object. I take
+        screenshots, then analyze the screenshot to determine the total number of pixels that are
+        within the edges of the shape (aka the area of the shadow). Examples of screenshots can
+        be seen in pictures (4) and (5).<br><br>
+        Each line of data that is put into the neural network is an array of all the areas calculated,
+        as well as the edge length. Currently, there are very few data points because the data set
+        takes a long time to execute (took 3 hours for 34 data points... yikes). I am working
+        continuously to optimize my algorithms, grow my data set, and increase the robustness of
+        my neural network.</h1>
+        <figure>
+        <img src = "./pictures/image (1).png" style = "position: absolute; height: 50%; left: 10.5%;top: 213%;"/>
+          
+        <figcaption style = "position: absolute;left: 10.5%;top: 264%;font-size: 1.8vw;">Picture (4): <br> Unrotated Cube Projective</figcaption>
+        </figure>
+        
+        <figure>
+          <img src = "./pictures/image (2).png" style = "position: absolute; height: 50%; left: 60%;top: 213%;"/>
+            
+          <figcaption style = "position: absolute;left: 60%;top: 264%;font-size: 1.8vw;">Picture (5): <br>Rotated Cube Projection</figcaption>
+          </figure>
+  
+        
+        
+          <div style = "position:absolute; top: 275%; width: 100%;font-size: 3vw; opacity: 0;">.</div>
 
 
-    document.onmousemove = function(){
-        var tempx1 = event.clientX  ;
-        var tempy1 = window.innerHeight-event.clientY;
-        var theta = (90-(Math.atan(tempy1/tempx1)*180/Math.PI)).toString();
-      
-        eye1.style.transform = "rotate(" + theta + "deg)";
-        eye2.style.transform = "rotate(" + theta + "deg)";
-
-    }
-  </script>
-</div>
-
-<div style = "position: absolute;left:45%; top: 5%;font-size: 70px;color:white">Projects!!</div>
-
-<div style = "position: absolute; left: 13%; top: 20%;font-size: 40px;color:whitesmoke">1. Bone Analysis</div>
-
-<div style = "position: absolute; left: 13%; top: 28%;font-size: 30px;color:whitesmoke; width: 1500px">Have you 
-  ever looked at an X-Ray of a broken bone and thought "Wow! That's a broken bone! I sure wonder if there is a way to quantify the 
-  amount the bone is broken with an angle! This would be so beneficial to resear..." uhh yea.... probably not... Anyways, I thought this 
-while at Dr. Alesha's lab. In her lab, bones were surgically and percisely broken and then the two parts were fixed in place.  </div>
-
-<a href = "break_bone.html">
-  <button id="some-button">Click here to visualize what happens.</button>
-</a>
 
 
 
