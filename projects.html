@@ -6,11 +6,106 @@
     <script src="scripts.js"> </script>
 </head>
 
-<body>
-    <h1 style = "font-size: 3vw; text-align:center; font-family: palatino, serif;"> Personal Projects!</h1>
-    <h1 style = "width: 80%; margin: 0 auto; font-weight: 90;display:flex;font-weight:bold; font-size: 2vw">Bone Analysis: </h1>
 
-    <h1 style = "width: 80%; margin: 0 auto; font-weight: 90;display:flex;"><br>
+  <div class="container">
+    <div class="title_container">
+      <h1> Personal Projects!</h1>
+      <h2> Bone Analysis: </h2>
+    </div>
+
+    <div class = "text_container">
+      <p>
+        I have no idea where the inspiration for this came from -- it was just something I thought
+        would be cool to code up and uses a lot of concepts that I am interested in. The goal is to
+        use a Tensorflow neural network to be able to determine the shape and size of an 3D
+        object purely based on how the area of the object's shadow changes as it rotates.<br><br>
+        I generated my own data set for this. To do so, I implemented Python code that displays
+        the 2D projection of a 3D object onto the computer screen and utilizes rotation matrices
+        (a concept of Linear Algebra) that rotates this projection. These displays are essentially
+        shadows of the object, assuming that a light is shined perfectly flush with the object. I take
+        screenshots, then analyze the screenshot to determine the total number of pixels that are
+        within the edges of the shape (aka the area of the shadow). Examples of screenshots can
+        be seen in pictures (4) and (5).<br><br>
+        Each line of data that is put into the neural network is an array of all the areas calculated,
+        as well as the edge length. Currently, there are very few data points because the data set
+        takes a long time to execute (took 3 hours for 34 data points... yikes). I am working
+        continuously to optimize my algorithms, grow my data set, and increase the robustness of
+        my neural network.</p>
+    </div>
+
+    <div class = "photo_gal">
+
+      <div class = "photo_with_cap">
+        <img src = "./pictures/bone1.png"> </img>
+        <p>
+          Picture (1): <br> Aligned Broken Bone
+        </p>
+      </div>
+
+      <div class = "photo_with_cap">
+        <img src = "./pictures/bone2.png"> </img>
+        <p>
+          Picture (2): 
+          <br> Unaligned Broken Bone
+        </p>
+      </div>
+
+      <div class = "photo_with_cap">
+          <img src = "./pictures/bone3.png"> </img>
+          <p>
+            Picture (3): <br> Analyzed Unaligned Broken Bone
+          </p>
+      </div>
+     
+    </div>
+
+    <div class="title_container">
+      <h2> Shape Analysis: </h2>
+    </div>
+    <div class = "text_container">
+      <p>
+        I gained the idea for this project during my internship in a bioengineering lab. I noticed
+        that after they had scanned and taken pictures of surgically broken bones, they would
+        have someone look at the pictures and decide whether or not the sample was good
+        enough to keep or throw it away. The main thing that was looked for was bone alignment.
+        Since I don't want to show real samples from the lab, I create a very realistic remake.
+        Picture (1) shows an aligned broken bone, while picture (2) shows a very unaligned broken
+        bone. <br><br>
+        This project determines the angle at which a bone is broken to provide the groundwork
+        for determining an exact angle of breakage that would cause a sample to be thrown away.
+        Taking inspiration from popular algorithms for image analysis, I developed my own edge detection algorithm to find the edge of the bone. The green in picture (3) shows the edge
+        my algorithm found as well as the angle of breakage that it calculated, which is 11.11
+        degrees.</p>
+    </div>
+    
+    <div class = "photo_gal">
+
+      <div class = "photo_with_cap">
+        <img src = "./pictures/cube2.png"> </img>
+        <p>
+          Picture (4): <br> Unrotated Cube Projective
+        </p>
+      </div>
+
+      <div class = "photo_with_cap">
+        <img src = "./pictures/cube1.png"> </img>
+        <p>
+          Picture (5): <br>Rotated Cube Projection
+        </p>
+      </div>
+     
+    </div>
+
+   
+  </div>
+
+<!-- 
+  <body>
+  <div display: flex;>
+    <h1 class = "projects_title"> Personal Projects!</h1>
+    <h1 class = "bone_title"> Bone Analysis: </h1>
+
+    <h1 class = "bone_paragraph"><br><br>
       I gained the idea for this project during my internship in a bioengineering lab. I noticed
       that after they had scanned and taken pictures of surgically broken bones, they would
       have someone look at the pictures and decide whether or not the sample was good
@@ -24,27 +119,26 @@
       my algorithm found as well as the angle of breakage that it calculated, which is 11.11
       degrees.</h1>
       <figure>
-      <img src = "./pictures/image (3).png" style = "position: absolute; height: 50%; left: 10.5%;top: 68%;"/>
-        
-      <figcaption style = "position: absolute;left: 10.5%;top: 119%;font-size: 1.8vw;">Picture (1): <br> Aligned Broken Bone</figcaption>
+      <img src = "./pictures/image (3).png" class = "bone_pic1"/>
+      <figcaption class = "bone_caption1">Picture (1): <br> Aligned Broken Bone</figcaption>
       </figure>
       
       <figure>
-        <img src = "./pictures/image (4).png" style = "position: absolute; height: 50%; left: 39%;top: 68%;"/>
+        <img src = "./pictures/image (4).png" class = "bone_pic2"/>
           
-        <figcaption style = "position: absolute;left: 39%;top: 119%;font-size: 1.8vw;">Picture (2): <br> Unaligned Broken Bone</figcaption>
+        <figcaption class = "bone_caption2">Picture (2): <br> Unaligned Broken Bone</figcaption>
         </figure>
 
       
       <figure>
-          <img src = "./pictures/image (5).png" style = "position: absolute; height: 50%; left: 70%;top: 68%;"/>
+          <img src = "./pictures/image (5).png" class = "bone_pic3"/>
             
-          <figcaption style = "position: absolute;left: 70%;top: 119%;font-size: 1.8vw;">Picture (3): <br> Analyzed Unaligned Broken Bone</figcaption>
+          <figcaption class = "bone_caption3">Picture (3): <br> Analyzed Unaligned Broken Bone</figcaption>
       </figure>
 
 
-      <h1 style = "position: absolute; width: 80%; margin: 0 auto; display: flex; font-weight: 90; top: 140%;text-align: left;left: 10.5%; font-size: 2vw; font-weight: bold;">Shape Identification: </h1>
-      <h1 style = "position: absolute; width: 80%; margin: 0 auto; display: flex; font-weight: 90; top: 140%;text-align: left;left: 10.5%;"><br><br>
+      <h1 class = "shape_title">Shape Identification: </h1>
+      <h1 class = "shape_description"><br><br>
         
         I have no idea where the inspiration for this came from -- it was just something I thought
         would be cool to code up and uses a lot of concepts that I am interested in. The goal is to
@@ -63,24 +157,24 @@
         continuously to optimize my algorithms, grow my data set, and increase the robustness of
         my neural network.</h1>
         <figure>
-        <img src = "./pictures/image (1).png" style = "position: absolute; height: 50%; left: 10.5%;top: 213%;"/>
+        <img src = "./pictures/image (1).png" class = "shape_pic1"/>
           
-        <figcaption style = "position: absolute;left: 10.5%;top: 264%;font-size: 1.8vw;">Picture (4): <br> Unrotated Cube Projective</figcaption>
+        <figcaption class = "shape_caption1">Picture (4): <br> Unrotated Cube Projective</figcaption>
         </figure>
         
         <figure>
-          <img src = "./pictures/image (2).png" style = "position: absolute; height: 50%; left: 60%;top: 213%;"/>
+          <img src = "./pictures/image (2).png" class = "shape_pic2"/>
             
-          <figcaption style = "position: absolute;left: 60%;top: 264%;font-size: 1.8vw;">Picture (5): <br>Rotated Cube Projection</figcaption>
+          <figcaption class = "shape_caption2">Picture (5): <br>Rotated Cube Projection</figcaption>
           </figure>
   
         
         
-          <div style = "position:absolute; top: 275%; width: 100%;font-size: 3vw; opacity: 0;">.</div>
+          <div class = "extention">.</div>
 
 
 
-
+        </div>
 
 </html>
-</body>
+</body> -->
