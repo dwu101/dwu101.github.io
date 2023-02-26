@@ -5,8 +5,8 @@
     <link rel="stylesheet" href = "styles.css">
     <script src="scripts.js"> </script>
 </head>
-<body >
-<div style = "display: flex">
+
+<div class = "container">
     <!-- <div class = "name_index">  Daniel Wu  </div>
 
     <img src = "./pictures/selfie.jpg" class = "selfie_index">
@@ -15,26 +15,35 @@
         York University heavily interested in CS applications
         for medicine, mathematics, and society. </div> -->
 
-    <div class = "index_wrap">
-        <h1 class = "name_index"> DANIEL</h1>
-        <img src = "./pictures/selfie2.png" class = "selfie_index"/>
-        <h1 class = "last_name_index">WU</h1>
+    <div class = "title_container_begin">
+        <div class = "name_container">
+            <h1> DANIEL</h1>
+        </div>
+        <div class = "selfie_container">
 
+            <div><img src = "./pictures/selfie2.png"/></div>
+            <div class = "selfie_caption">2nd-year CS major <br>At NYU</div>
+            
+    
+        </div>
+        
+        <div class = "name_container">
+            <h1>WU</h1>
+
+        </div>
     </div>
 
-<div class = "selfie_caption">
 
-2nd-year CS major <br>At NYU
 <!-- <img src = "./pictures/Basic_red_dot.png" style = "position: absolute;width: 0.4%;top: 94%;
 left: 48.3%;"> -->
-</div>
+
 
 <!-- <img src = "./pictures/Basic_red_dot.png" style = "position: absolute;width: 0.4%;top: 48.5%;
 left: 48.3%;"> -->
 
-    
-    <h2 class = "dan_caption">HEAVILY INTERESTED IN CS APPLICATIONS FOR MATHEMATICS, MEDICINE, AND SOCIETY.</h3>
-
+    <div class = "dan_caption">
+    <h2 >HEAVILY INTERESTED IN CS APPLICATIONS FOR MATHEMATICS, MEDICINE, AND SOCIETY.</h3>
+    </div>
     
     
     <div class = "about_me"> About Me <br/>
@@ -58,13 +67,12 @@ left: 48.3%;"> -->
 
         </div>
     </div>
-    
-    <a href = "projects.html" class = "personal_projects_link"> <br>
+    <div class = "personal_projects_link">
+    <a href = "projects.html" > <br>
         Interested? Check out my personal projects!
     
-    </a>
+    </a></div>
 
-    <div style = "position:absolute; top: 160%; width: 100%;font-size: 3vw; opacity: 0;">.</div>
 
 
 
@@ -95,6 +103,6 @@ left: 48.3%;"> -->
 
 
     <!-- <div style = "width:10%; height: 100%; background-color: red"></div> -->
-</body>
+
 
 </html>
