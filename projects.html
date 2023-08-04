@@ -5,17 +5,61 @@
     <link rel="stylesheet" href = "styles.css">
     <script src="scripts.js"> </script>
 </head>
+<div class="project_header">
+  Personal Projects!
+ </div>
 
+<div class = "container">
 
-  <div class="container">
-    <div class="title_container">
-      <h1> Personal Projects!</h1>
-      <h2> Bone Analysis: </h2>
-    </div>
+  <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Tic-Tac-Toe')" >
+    <img src = "pictures/tic-tac-toe.png" alt = "test">
+    <p>Tic-Tac-Toe</p>
+    <h4>React.js, Flask</h4>
+  </div> 
 
-    <div class = "text_container">
-      <p>
-        I gained the idea for this project during my internship in a bioengineering lab. I noticed
+  <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/GoogleCloudDataCollection')" >
+    <img src = "pictures/gcp.png" alt = "test">
+    <p>Google Cloud Data Collection</p>
+    <h4>Google Cloud VM, RestAPI, Google API, Linux</h4>
+  </div> 
+
+  <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/MetaWear-Data-App')" >
+    <img src = "pictures/mobileappdev.png" alt = "test">
+    <p>MetaWear Mobile App</p>
+    <h4>React Native, Expo, Flask, ngrok</h4>
+  </div> 
+
+  
+  
+  <div class = "project" onclick = "redirectToPage('https://github.com/BoneAnalysis/BoneAnalysis.github.io')" >
+    <img src = "pictures/bone3.png" alt = "test">
+    <p>Bone Analysis</p>
+    <h4>Python</h4>
+  </div> 
+
+  <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Shape-Identification')" >
+    <img src = "pictures/cube1.png" alt = "test">
+    <p>Shape Identification</p>
+    <h4>Python, Tensorflow</h4>
+  </div> 
+
+</div>
+
+<div class = "back_link">
+  <div style = "padding-bottom: 25px;">
+  <a href = "index.html">
+    Click here to go back!
+  </a>
+</div>
+
+<div>
+  <a href = https://drive.google.com/file/d/1rk4Ubhfb8n1whByJmiR0oLv0kZf5daJE/view?usp=sharing">
+    Click here to view my resume!
+  </a>
+
+</div>
+
+<!-- I gained the idea for this project during my internship in a bioengineering lab. I noticed
         that after they had scanned and taken pictures of surgically broken bones, they would
         have someone look at the pictures and decide whether or not the sample was good
         enough to keep or throw it away. The main thing that was looked for was bone alignment.
@@ -28,39 +72,6 @@
         my algorithm found as well as the angle of breakage that it calculated, which is 11.11
         degrees.</p>
 
-    </div>
-
-    <div class = "photo_gal">
-
-      <div class = "photo_with_cap">
-        <img src = "./pictures/bone1.png"> </img>
-        <p>
-          Picture (1): <br> Aligned Broken Bone
-        </p>
-      </div>
-
-      <div class = "photo_with_cap">
-        <img src = "./pictures/bone2.png"> </img>
-        <p>
-          Picture (2): 
-          <br> Unaligned Broken Bone
-        </p>
-      </div>
-
-      <div class = "photo_with_cap">
-          <img src = "./pictures/bone3.png"> </img>
-          <p>
-            Picture (3): <br> Analyzed Unaligned Broken Bone
-          </p>
-      </div>
-     
-    </div>
-
-    <div class="title_container">
-      <h2> Shape Analysis: </h2>
-    </div>
-    <div class = "text_container">
-      <p>
         I have no idea where the inspiration for this came from —— it was just something I thought
         would be cool to code up and uses a lot of concepts that I am interested in. The goal is to
         use a Tensorflow neural network to be able to determine the shape and size of an 3D
@@ -76,122 +87,4 @@
         as well as the edge length. Currently, there are very few data points because the data set
         takes a long time to execute (took 3 hours for 34 data points... yikes). I am working
         continuously to optimize my algorithms, grow my data set, and increase the robustness of
-        my neural network.</p>
-
-    </div>
-    
-    <div class = "photo_gal">
-
-      <div class = "photo_with_cap">
-        <img src = "./pictures/cube2.png"> </img>
-        <p>
-          Picture (4): <br> Unrotated Cube Projective
-        </p>
-      </div>
-
-      <div class = "photo_with_cap">
-        <img src = "./pictures/cube1.png"> </img>
-        <p>
-          Picture (5): <br>Rotated Cube Projection
-        </p>
-      </div>
-     
-    </div>
-
-
-
-   <div class = "back_link">
-    <div style = "padding-bottom: 25px;">
-    <a href = "index.html">
-      Click here to go back!
-    </a>
-  </div>
-
-  <div>
-    <a href = "https://drive.google.com/file/d/12sKLQdFkVS1YdRCnXA-vkK747Iyi9znL/view?usp=sharing">
-      Click here to view my resume!
-    </a>
-
-  </div>
-   </div>
-  </div>
-
-<!-- 
-  <body>
-  <div display: flex;>
-    <h1 class = "projects_title"> Personal Projects!</h1>
-    <h1 class = "bone_title"> Bone Analysis: </h1>
-
-    <h1 class = "bone_paragraph"><br><br>
-      I gained the idea for this project during my internship in a bioengineering lab. I noticed
-      that after they had scanned and taken pictures of surgically broken bones, they would
-      have someone look at the pictures and decide whether or not the sample was good
-      enough to keep or throw it away. The main thing that was looked for was bone alignment.
-      Since I don't want to show real samples from the lab, I create a very realistic remake.
-      Picture (1) shows an aligned broken bone, while picture (2) shows a very unaligned broken
-      bone. <br><br>
-      This project determines the angle at which a bone is broken to provide the groundwork
-      for determining an exact angle of breakage that would cause a sample to be thrown away.
-      Taking inspiration from popular algorithms for image analysis, I developed my own edge detection algorithm to find the edge of the bone. The green in picture (3) shows the edge
-      my algorithm found as well as the angle of breakage that it calculated, which is 11.11
-      degrees.</h1>
-      <figure>
-      <img src = "./pictures/image (3).png" class = "bone_pic1"/>
-      <figcaption class = "bone_caption1">Picture (1): <br> Aligned Broken Bone</figcaption>
-      </figure>
-      
-      <figure>
-        <img src = "./pictures/image (4).png" class = "bone_pic2"/>
-          
-        <figcaption class = "bone_caption2">Picture (2): <br> Unaligned Broken Bone</figcaption>
-        </figure>
-
-      
-      <figure>
-          <img src = "./pictures/image (5).png" class = "bone_pic3"/>
-            
-          <figcaption class = "bone_caption3">Picture (3): <br> Analyzed Unaligned Broken Bone</figcaption>
-      </figure>
-
-
-      <h1 class = "shape_title">Shape Identification: </h1>
-      <h1 class = "shape_description"><br><br>
-        
-        I have no idea where the inspiration for this came from -- it was just something I thought
-        would be cool to code up and uses a lot of concepts that I am interested in. The goal is to
-        use a Tensorflow neural network to be able to determine the shape and size of an 3D
-        object purely based on how the area of the object's shadow changes as it rotates.<br><br>
-        I generated my own data set for this. To do so, I implemented Python code that displays
-        the 2D projection of a 3D object onto the computer screen and utilizes rotation matrices
-        (a concept of Linear Algebra) that rotates this projection. These displays are essentially
-        shadows of the object, assuming that a light is shined perfectly flush with the object. I take
-        screenshots, then analyze the screenshot to determine the total number of pixels that are
-        within the edges of the shape (aka the area of the shadow). Examples of screenshots can
-        be seen in pictures (4) and (5).<br><br>
-        Each line of data that is put into the neural network is an array of all the areas calculated,
-        as well as the edge length. Currently, there are very few data points because the data set
-        takes a long time to execute (took 3 hours for 34 data points... yikes). I am working
-        continuously to optimize my algorithms, grow my data set, and increase the robustness of
-        my neural network.</h1>
-        <figure>
-        <img src = "./pictures/image (1).png" class = "shape_pic1"/>
-          
-        <figcaption class = "shape_caption1">Picture (4): <br> Unrotated Cube Projective</figcaption>
-        </figure>
-        
-        <figure>
-          <img src = "./pictures/image (2).png" class = "shape_pic2"/>
-            
-          <figcaption class = "shape_caption2">Picture (5): <br>Rotated Cube Projection</figcaption>
-          </figure>
-  
-        
-        
-          <div class = "extention">.</div>
-
-
-
-        </div>
-
-</html>
-</body> -->
+        my neural network.</p> -->
