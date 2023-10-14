@@ -3,17 +3,13 @@
 
 <head> 
     <link rel="stylesheet" href = "styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
     <script src="scripts.js"> </script>
 </head>
 
+<body> 
 <div class = "container">
-    <!-- <div class = "name_index">  Daniel Wu  </div>
 
-    <img src = "./pictures/selfie.jpg" class = "selfie_index">
-
-    <div class = "description_index">A 2nd-year CS major at New
-        York University heavily interested in CS applications
-        for medicine, mathematics, and society. </div> -->
 
     <div class = "title_container_begin">
         <div class = "name_container">
@@ -22,7 +18,7 @@
         <div class = "selfie_container">
 
             <div><img src = "./pictures/selfie2.png"/></div>
-            <div class = "selfie_caption">2nd-year CS major <br>At NYU</div>
+            <!-- <div class = "selfie_caption">2nd-year CS major <br>At NYU</div> -->
             
     
         </div>
@@ -34,87 +30,13 @@
     </div>
 
 
-<!-- <img src = "./pictures/Basic_red_dot.png" style = "position: absolute;width: 0.4%;top: 94%;
-left: 48.3%;"> -->
-
-
-<!-- <img src = "./pictures/Basic_red_dot.png" style = "position: absolute;width: 0.4%;top: 48.5%;
-left: 48.3%;"> -->
 
     <div class = "dan_caption">
-    <h2 >HEAVILY INTERESTED IN CS APPLICATIONS FOR MATHEMATICS, MEDICINE, AND FINANCE.</h3>
+    <h2 >A current BS candidate in Computer Science at NYU with a strong interest in CS application for medicine, mathematics, and finance.</h3>
     </div>
     
     
-    <div class = "about_me"> About Me <br/>
 
-        <div class = "about_me_text">
-            Upon starting an
-            internship at a bioengineering lab at NYU Rory Meyers, I found that even
-            though I was interested in the topic, I was very disinterested in wet-lab work. 
-            I had taken a couple CS cources up until that point and found it pretty interesting
-            and after lots of debate, advice from friends and family, and numerous breakdowns,
-            I decided to test my interest.
-            <br/><br/>
-            I built a prototype of an algorithm that could be used to improve the lab's data quality,
-            which I presented to my advisor along with my thoughts about switching interests. Luckily,
-            my advisor was extremely supportive and allowed me to transition from a wet-lab-based
-            internship to a tech-based internship, which allowed me to find my passion for CS.<br/><br/>
-
-            Currently, I am working for multiple projects in Professor Graham Dove's lab to ensure that the destruction of Manahattan Chinatown's Jail 
-            and subsequent construction of the mega-jail remain within healthy and legal limits of pollution, noise, and vibration.
-            This work is especially important because within 100ft of the site, there is a low-income senior citizen home 
-            along with a daycare. Sensors that measure air quality, noise levels, and vibration levels were placed on site, and I wrote an 
-            algorithm with Python and Google API to autonomously collect, store, and organize data. This algorithm is hosted on a Google Cloud Compute Engine
-            Virtual Machine. 
-            <br/><br/>
-            
-            Another project I am working on for Professor Graham Dove is the development of a mobile app that is used for 
-            remote health monitoring of Multiple Sclerosis (MS) patients. Patients would have a sensor on their body that collects movement data
-            at all times, which is then analyzed by the mobile app. Surveys will also be sent to the patient through the mobile 
-            app periodically in order to help contextualize the data. Depending on the severity of the situation, the mobile app can respond accordingly,
-            such as connecting the patient to their clinician or calling for emergency help. For this project, we have a React Native frontend with a 
-            Flask backend and is tested with Expo Go and ngrok.
-
-            <br/><br/>
-            I also have a deep-rooted interest in mathematics, having taken
-            classes such as Linear Algebra and Differential Equations, Data Analysis, and Calculus 3.
-            This semester, I am taking courses in Computer Architecture and Organization, Computer Networking, Databases, and ML in Finance.
-            
-            
-
-        </div>
-    </div>
-    <div class = "personal_projects_link">
-        <div style = "padding-bottom: 25px;">
-    <a href = "projects.html" > <br>
-        Interested? Check out my projects!
-    </a>
-</div>
-<div>
-    <a href = "https://drive.google.com/file/d/1rk4Ubhfb8n1whByJmiR0oLv0kZf5daJE/view?usp=sharing">
-        Still interested? Here's my resume!
-    </a>
-</div>
-</div>
-
-
-
-
-    <!-- <a href = "About_me.html">
-        <h1 class = "about_me_index">About Me</h1>
-
-    </a>
-
-    <a href = "projects.html">
-        <h1 class = "about_me_index">Projects</h1>
-
-    </a>
-
-    <a href = "fun_facts.html">
-        <h1 class = "about_me_index">Fun Facts</h1>
-
-    </a> -->
 
     <a href = "https://github.com/dwu101">
         <img src = "./pictures/github2.png" class = "github_all">
@@ -125,9 +47,59 @@ left: 48.3%;"> -->
     </a>
     </div>
 
+    
+<div class="project_header">
+    Personal Projects:
+   </div>
+  
+  <div class = "container">
+  
+    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Tic-Tac-Toe')" >
+      <img src = "pictures/tic-tac-toe.png" alt = "test">
+      <p>Tic-Tac-Toe</p>
+      <h4>React.js, Flask</h4>
+    </div> 
+  
+    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/GoogleCloudDataCollection')" >
+      <img src = "pictures/gcp.png" alt = "test" style="width:50%;">
+      <p>Environmental Sensor Data Collection</p>
+      <h4>Google Cloud VM, RestAPI, Google API, Linux</h4>
+    </div> 
+
+    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Stock-Market-Simulation')" >
+        <img src = "pictures/stocks.png" alt = "test">
+        <p>Stock Market Simulation</p>
+        <h4>Python, AWS EC2, RestAPI</h4>
+      </div>
+  
+    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/MetaWear-Data-App')" >
+      <img src = "pictures/mobileappdev.png" alt = "test">
+      <p>MetaWear Mobile App</p>
+      <h4>React Native, Expo, Flask, ngrok</h4>
+    </div> 
+  
+    
+    
+    <div class = "project" onclick = "redirectToPage('https://github.com/BoneAnalysis/BoneAnalysis.github.io')" >
+      <img src = "pictures/bone3.png" alt = "test">
+      <p>Bone Analysis</p>
+      <h4>Python</h4>
+    </div> 
+  
+    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Shape-Identification')" >
+      <img src = "pictures/cube1.png" alt = "test">
+      <p>Shape Identification</p>
+      <h4>Python, Tensorflow</h4>
+    </div> 
+
+     
+
+  </div>
+  
+</body>
+  
 
 
-    <!-- <div style = "width:10%; height: 100%; background-color: red"></div> -->
 
-
+    
 </html>
