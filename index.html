@@ -4,100 +4,120 @@
 <head> 
     <link rel="stylesheet" href = "styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space Mono">
     <script src="scripts.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/linuxguist/ChatGPT_Typewriter_Style_Widget@main/ChatGPT_Typewriter_Style_Widget.js"></script>
+    <title>dan wu's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 
 <body> 
-<div class = "container">
 
+    <div class = "name_container">
+        <h1> DANIEL <br> WU</h1>
+    </div>
 
-    <div class = "title_container_begin">
-        <div class = "name_container">
-            <h1> DANIEL</h1>
-        </div>
-        <div class = "selfie_container">
+    <p class = "small_text" style="margin-top: -60px;">print('welcome to my portfolio')</p>
 
-            <div><img src = "./pictures/selfie2.png"/></div>
-            <!-- <div class = "selfie_caption">2nd-year CS major <br>At NYU</div> -->
-            
-    
-        </div>
+    <div class = "right_text">
+        <!-- <h2 style="font-weight: 500;">I like building Math-y apps</h2> -->
+        <h3 style="font-weight: 550;">scroll ⤵</h3>
         
-        <div class = "name_container">
-            <h1>WU</h1>
+    </div>
 
+    
+
+    <!-- <h2 style="font-family: Space Mono, sans-serif;">Hey there, I'm Dan!</h2> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class = "right_text">
+            
+
+            <!-- Add the following div and p elements, to that part of your webpage, where you want to see the animation. Customize it as per your requirements. Increment their id numbers, if you need them at multiple places. By the way, they will remain invisible (display: none), till you call the animation function. -->
+              
+            <div id="my_chatgpt_style_div_1" class="my_chatgpt_div_style" style="display: none;"></div>     
+            
+            <p id="paragraph_id1" style="display: none;">Hi, I'm Dan! 👋 I'm a passionate third-year CS student @ NYU with interests in intersection between CS with medicine, mathematics, and finance. </p>
+            <script>
+            printStringByLetter("paragraph_id1","my_chatgpt_style_div_1");
+            </script>        
+            
+            <img src="me.png" style="width:30%">
+    </div>
+    <br>
+    <br>
+
+    <div class = "right_text">
+        <h1 style="font-weight: 500; font-size: 80px;">Projects</h1>
+        <p class = "small_text">alert('<span style="color:blue">click ⬉</span> on any of these projects to learn more/look at the repo!')</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class = "proj_cont">
+        <div class = "proj_item">
+            <a href="https://github.com/dwu101/Stock-Market-Simulation" target="_blank">
+            <img src = "assets/stonk.png">
+            <h1>Stock market simulator  <br>
+                </h1>
+            <p>('Python', 'AWS', 'RESTful API')</p>
+            </a>
         </div>
+
+        <div class = "proj_item">
+            <a href="https://github.com/dwu101/MetaWear-Data-App" target="_blank">
+            <img src = "assets/metawear.png">
+            <h1>Metawear mobile  <br>
+                app to connect  <br>
+                MS patients with doctors</h1>
+            <p>('React Native', 'Flask', 'ngrok','Mobile Dev')</p>
+            </a>
+        </div>
+
+        <div class = "proj_item">
+            <a href="https://github.com/BoneAnalysis/BoneAnalysis.github.io" target="_blank">
+            <img src = "assets/bone.png">
+            <h1>Bone analysis for <br>
+                quality assurance</h1>
+            <p>('Python')</p>
+            </a>
+        </div>
+
+        <div class = "proj_item">
+            <img src = "assets/env.png">
+            <a href="https://github.com/dwu101/GoogleCloudDataCollection" target="_blank">
+            <h1>Autonomous enviornmental <br>
+                sensor data collection
+            </h1>
+            <p>('Google Cloud VM', 'RESTful API', 'Google API', 'Linux')</p>
+            </a>
+        </div>
+
+        <div class = "proj_item">
+            <a href="https://github.com/dwu101/Shape-Identification" target="_blank">
+            <img src = "assets/shapes.png">
+            <h1>Guessing 3D shapes based looking at its shadow?!
+            </h1>
+            <p>('Python', 'Tensorflow', 'Machine Learning')</p>
+        </a>
+        </div>
+
+        
+        <div class = "proj_item" target="_blank">
+            <a href="https://github.com/dwu101/Tic-Tac-Toe">
+            <img src = "assets/tictac.png">
+            <h1>Tic-tac-toe AI vs Player
+            </h1>
+            <p>('React', 'Flask')</p>
+            </a>
+        </div>
+      
+
     </div>
-
-
-
-    <div class = "dan_caption">
-    <h2 >A current BS candidate in Computer Science at NYU with a strong interest in CS application for medicine, mathematics, and finance.</h3>
-    </div>
-    
-    
-
-
-    <a href = "https://github.com/dwu101">
-        <img src = "./pictures/github2.png" class = "github_all">
-    </a>
-
-    <a href = "https://www.linkedin.com/in/daniel-wu-5a31ab213/">
-        <img src = "./pictures/linkedin2.png" class = "linkedin_all">
-    </a>
-    </div>
-
-    
-<div class="project_header">
-    Personal Projects:
-   </div>
-  
-  <div class = "container">
-    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Stock-Market-Simulation')" >
-      <img src = "pictures/stocks.png" alt = "test">
-      <p>Stock Market Simulation</p>
-      <h4>Python, AWS EC2, RestAPI</h4>
-    </div>
-  
-    
-  
-    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/GoogleCloudDataCollection')" >
-      <img src = "pictures/gcp.png" alt = "test" style="width:50%;">
-      <p>Environmental Sensor Data Collection</p>
-      <h4>Google Cloud VM, RestAPI, Google API, Linux</h4>
-    </div> 
-
-    
-  
-    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/MetaWear-Data-App')" >
-      <img src = "pictures/mobileappdev.png" alt = "test">
-      <p>MetaWear Mobile App</p>
-      <h4>React Native, Expo, Flask, ngrok</h4>
-    </div> 
-  
-    
-    
-    <div class = "project" onclick = "redirectToPage('https://github.com/BoneAnalysis/BoneAnalysis.github.io')" >
-      <img src = "pictures/bone3.png" alt = "test">
-      <p>Bone Analysis</p>
-      <h4>Python</h4>
-    </div> 
-
-    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Tic-Tac-Toe')" >
-      <img src = "pictures/tic-tac-toe.png" alt = "test">
-      <p>Tic-Tac-Toe</p>
-      <h4>React.js, Flask</h4>
-    </div> 
-  
-    <div class = "project" onclick = "redirectToPage('https://github.com/dwu101/Shape-Identification')" >
-      <img src = "pictures/cube1.png" alt = "test">
-      <p>Shape Identification</p>
-      <h4>Python, Tensorflow</h4>
-    </div> 
-
-     
-
-  </div>
   
 </body>
   
